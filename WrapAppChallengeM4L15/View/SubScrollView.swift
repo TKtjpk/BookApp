@@ -21,11 +21,25 @@ struct SubScrollView: View {
                     .shadow(color: .gray, radius: 5, x: -5, y: 5)
                 
                 VStack (alignment: .leading) {
-                    Text(book.title)
-                        .bold()
-                        .foregroundColor(.primary)
-                        .font(.largeTitle)
-                        .padding(.bottom, 2)
+                    HStack{
+                        Text(book.title)
+                            .bold()
+                            .foregroundColor(.primary)
+                            .font(.largeTitle)
+                            .padding(.bottom, 2)
+                        
+                        Spacer()
+                        
+                        if book.isFavourite {
+                            Image(systemName: "star.fill")
+                                .resizable()
+                                .frame(width: 28, height: 28)
+                                .foregroundColor(.yellow)
+                        }
+                        
+                        
+                    }
+                    
                     Text(book.author)
                         .foregroundColor(.primary)
                     Image("cover\(book.id)")
@@ -36,17 +50,14 @@ struct SubScrollView: View {
                 }
                 .padding([.leading, .trailing], 5)
             }
-            
-            .padding([.leading, .trailing, .bottom], 20)
         }
     }
 }
 
 struct SubScrollView_Previews: PreviewProvider {
     static var previews: some View {
+        //let model = BookModel()
         
-        let model = BookModel()
-        
-        SubScrollView(book: model.books[0])
+        SubScrollView(book: Book())
     }
 }

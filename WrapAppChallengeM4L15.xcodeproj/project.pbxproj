@@ -15,9 +15,9 @@
 		95702CFA26228A810013D453 /* Book.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95702CF926228A810013D453 /* Book.swift */; };
 		95702CFD262386D60013D453 /* Data.json in Resources */ = {isa = PBXBuildFile; fileRef = 95702CFC262386D60013D453 /* Data.json */; };
 		95702D00262389070013D453 /* DataService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95702CFF262389070013D453 /* DataService.swift */; };
-		95702D05262390480013D453 /* BookMainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95702D04262390480013D453 /* BookMainView.swift */; };
 		95702D092623A4E70013D453 /* SubScrollView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95702D082623A4E70013D453 /* SubScrollView.swift */; };
 		95702D0C2623BCED0013D453 /* BookRatingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95702D0B2623BCED0013D453 /* BookRatingView.swift */; };
+		95702D14262401830013D453 /* BookContent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 95702D13262401830013D453 /* BookContent.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -31,9 +31,9 @@
 		95702CF926228A810013D453 /* Book.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Book.swift; sourceTree = "<group>"; };
 		95702CFC262386D60013D453 /* Data.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = Data.json; sourceTree = "<group>"; };
 		95702CFF262389070013D453 /* DataService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataService.swift; sourceTree = "<group>"; };
-		95702D04262390480013D453 /* BookMainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookMainView.swift; sourceTree = "<group>"; };
 		95702D082623A4E70013D453 /* SubScrollView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SubScrollView.swift; sourceTree = "<group>"; };
 		95702D0B2623BCED0013D453 /* BookRatingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookRatingView.swift; sourceTree = "<group>"; };
+		95702D13262401830013D453 /* BookContent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BookContent.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -90,10 +90,10 @@
 		95702CEE2622876E0013D453 /* View */ = {
 			isa = PBXGroup;
 			children = (
-				95702D04262390480013D453 /* BookMainView.swift */,
 				95702CE0262287540013D453 /* BookScrollView.swift */,
 				95702D082623A4E70013D453 /* SubScrollView.swift */,
 				95702D0B2623BCED0013D453 /* BookRatingView.swift */,
+				95702D13262401830013D453 /* BookContent.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -204,9 +204,9 @@
 				95702D092623A4E70013D453 /* SubScrollView.swift in Sources */,
 				95702D0C2623BCED0013D453 /* BookRatingView.swift in Sources */,
 				95702CF726228A770013D453 /* BookModel.swift in Sources */,
+				95702D14262401830013D453 /* BookContent.swift in Sources */,
 				95702CE1262287540013D453 /* BookScrollView.swift in Sources */,
 				95702CDF262287540013D453 /* WrapAppChallengeM4L15App.swift in Sources */,
-				95702D05262390480013D453 /* BookMainView.swift in Sources */,
 				95702D00262389070013D453 /* DataService.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

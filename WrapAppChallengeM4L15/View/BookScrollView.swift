@@ -14,13 +14,14 @@ struct BookScrollView: View {
     var body: some View {
         NavigationView {
             ScrollView {
-                LazyVStack (alignment: .leading, spacing: 30){
+                LazyVStack (alignment: .leading, spacing: 30) {
                     ForEach(model.books) { r in
+                        
                         NavigationLink(
                             destination: BookRatingView(book: r),
                             label: {
-                                
                                 SubScrollView(book: r)
+                                    .padding([.leading, .trailing], 20)
                             })
                     }
                 }

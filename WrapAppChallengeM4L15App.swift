@@ -11,7 +11,8 @@ import SwiftUI
 struct WrapAppChallengeM4L15App: App {
     var body: some Scene {
         WindowGroup {
-            BookMainView()
+            BookScrollView()
+                .environmentObject(BookModel())
         }
     }
 }
